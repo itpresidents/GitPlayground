@@ -29,10 +29,11 @@ class Particle {
   }
 
   // Is the particle still useful?
- boolean dead() {
+  boolean dead() {
     if (lifespan <= 0.0) {
       return true;
     } else {
-      return false; // this is correct - YUP
+      return false;
+    }
   }
 }
