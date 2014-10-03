@@ -26,7 +26,7 @@ class ParticleSystem {
   }
 
   void addParticle(Particle p) {
-    
+    particles.add(p);
   }
 
   // A method to test if the particle system still has particles
