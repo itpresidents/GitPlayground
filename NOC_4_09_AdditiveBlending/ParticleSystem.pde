@@ -18,11 +18,21 @@ class ParticleSystem {
   }
 
   void run() {
+//    
+//    Iterator<Particle> it = particles.iterator();
+//    while (it.hasNext()) {
+//      Particle p = it.next();
+//      p.run();
+//      if (p.dead()) {
+//       it.remove();
+//      }
+//    }
     
   }
 
   void addParticle() {
-    
+        particles.add(new Particle(origin));
+
   }
 
   void addParticle(Particle p) {
