@@ -7,27 +7,25 @@ class Particle {
 
   // Another constructor (the one we are using here)
   Particle(PVector l) {
-    
   }
 
   void run() {
-   
   }
 
   // Method to update location
   void update() {
-   
   }
 
   // Method to display
   void render() {
-   
+    imageMode(CENTER);
+    tint(lifespan);
+    image(img, loc.x, loc.y);
   }
-  
+
   // Is the particle still useful?
   boolean dead() {
     return true; // Not necessarily correct
   }
 }
-
 
