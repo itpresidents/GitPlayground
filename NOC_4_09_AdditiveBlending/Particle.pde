@@ -29,7 +29,7 @@ class Particle {
     if (lifespan <= 0.0) {
       return true;
     } else {
-      return false; // this is correct
+      return false; // this is correct - YUP
   }
 }
 
