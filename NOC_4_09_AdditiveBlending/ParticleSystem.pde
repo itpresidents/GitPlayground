@@ -37,7 +37,7 @@ particles.add(new Particle(origin)); // Add "num" amount of particles to the arr
   }
 
   void addParticle(Particle p) {
-    
+    particles.add(p);
   }
 
   // A method to test if the particle system still has particles
