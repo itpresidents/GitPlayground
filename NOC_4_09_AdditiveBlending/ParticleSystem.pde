@@ -13,9 +13,13 @@ class ParticleSystem {
   
   PImage tex;
 
-  ParticleSystem(int num, PVector v) {
-   
+ParticleSystem(int num, PVector v) {
+particles = new ArrayList(); // Initialize the arraylist
+origin = v.get(); // Store the origin point
+for (int i = 0; i < num; i++) {
+particles.add(new Particle(origin)); // Add "num" amount of particles to the arraylist
   }
+}
 
   void run() {
         Iterator<Particle> it = particles.iterator();
