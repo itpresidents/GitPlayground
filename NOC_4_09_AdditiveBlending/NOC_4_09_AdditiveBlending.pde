@@ -9,7 +9,15 @@ ParticleSystem ps;
 PImage img;
 
 void setup() {
-  size(displayWidth, displayHeight);  
+
+  size(800, 200, P2D);
+
+  // Create an alpha masked image to be applied as the particle's texture
+  img = loadImage("texture.png");
+
+  ps = new ParticleSystem(0, new PVector(width/2, 50));
+  smooth();
+
 }
 
 void draw() {  

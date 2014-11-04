@@ -32,14 +32,21 @@ class ParticleSystem {
   }
 
   void addParticle() {
+    particles.add(new Particle(origin));
   }
 
   void addParticle(Particle p) {
+    particles.add(p);
   }
+
 
   // A method to test if the particle system still has particles
   boolean dead() {
-    return true; // Not necessarily correct
+    if (particles.isEmpty()) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 

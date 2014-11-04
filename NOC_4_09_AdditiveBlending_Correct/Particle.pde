@@ -22,6 +22,7 @@ class Particle {
   void run() {
     update();
     render();
+    //have no idea 
   }
 
   // Method to update location
@@ -47,5 +48,3 @@ class Particle {
     }
   }
 }
-
-
