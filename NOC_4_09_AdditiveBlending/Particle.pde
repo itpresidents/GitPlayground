@@ -4,6 +4,10 @@
 // A simple Particle class
 
 class Particle {
+  PVector loc;
+  PVector vel;
+  PVector acc;
+  float lifespan;
 
   // Another constructor (the one we are using here)
   Particle(PVector l) {
