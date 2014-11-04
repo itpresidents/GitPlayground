@@ -24,10 +24,10 @@ class ParticleSystem {
   void run() {
     Iterator<Particle> it = particles.iterator();
     while ( it.hasNext() ) {
-      Particle p = it.next();
+      Particle pp = it.next();
      // p=it.next();
-      p.run();
-      if (p.dead()) {
+      pp.run();
+      if (pp.dead()) {
        it.remove();
       }
       
