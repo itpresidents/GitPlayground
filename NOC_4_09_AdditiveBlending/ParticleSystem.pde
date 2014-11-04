@@ -20,11 +20,13 @@ ParticleSystem(int num, PVector v) {
   }
 
   void addParticle() {
-    
+    particles.add(new Particle(origin));
   }
 
   void addParticle(Particle p) {
+    particles.add(p);
   }
+
 
   // A method to test if the particle system still has particles
   boolean dead() {

@@ -30,6 +30,9 @@ class Particle {
 
   // Method to display
   void render() {
+    imageMode(CENTER);
+    tint(lifespan);
+    image(img,loc.x,loc.y);
   }
 
   // Is the particle still useful?
