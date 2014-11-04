@@ -8,6 +8,7 @@ class Particle {
   PVector vel;
   PVector acc;
   float lifespan;
+
   // Another constructor (the one we are using here)
   Particle(PVector l) {
         // Boring example with constant acceleration
