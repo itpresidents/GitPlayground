@@ -6,10 +6,10 @@
 
 ParticleSystem ps;
 
-
 PImage img;
 
 void setup() {
+
   size(800, 200, P2D);
 
   // Create an alpha masked image to be applied as the particle's texture
@@ -17,9 +17,15 @@ void setup() {
 
   ps = new ParticleSystem(0, new PVector(width/2, 50));
   smooth();
+
 }
 
-void draw() {
- 
+void draw() {  
+  blendMode(ADD);
+  background(0);
+  ps.run();
+  for (int i = 0; i < 10; i++) {
+    ps.addParticle();
+  } 
 }
 
