@@ -30,7 +30,11 @@ ParticleSystem(int num, PVector v) {
 
   // A method to test if the particle system still has particles
   boolean dead() {
-    return true; // Not necessarily correct
+    if (particles.isEmpty()) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 }
