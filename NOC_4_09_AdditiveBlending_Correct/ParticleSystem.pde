@@ -23,12 +23,14 @@ class ParticleSystem {
 
   void run() {
     Iterator<Particle> it = particles.iterator();
-    while (it.hasNext()) {
+    while ( it.hasNext() ) {
       Particle p = it.next();
+     // p=it.next();
       p.run();
       if (p.dead()) {
        it.remove();
       }
+      
     }
   }
 
@@ -50,6 +52,3 @@ class ParticleSystem {
   }
 
 }
-
-
-
